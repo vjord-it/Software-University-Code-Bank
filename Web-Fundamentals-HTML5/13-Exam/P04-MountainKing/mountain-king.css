@@ -1,0 +1,218 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+* {
+    /*margin: 0;*/
+    /*padding: 0;*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url(img/background-header.jpg) no-repeat center;
+    background-size: cover;
+    /*height: 450px;*/
+}
+
+.logo {
+    display: block;
+    width: 15%;
+    /*width: 200px;*/
+    padding-top: 20px;
+}
+
+.header-primary {
+    text-align: center;
+}
+
+    .header-primary .header-title {
+        color: #000000;
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    .header-primary .header-intro {
+        color: #6D6A6F;
+        text-shadow: 1px 1px 3px #ffffff;
+        margin: 0 auto;
+    }
+
+    .header-primary .header-description {
+        color: #2E2A2A;
+        font-style: italic;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px #ffffff;
+    }
+
+    .header-primary .header-links {
+        padding: 50px 0;
+    }
+
+    .header-primary .button {
+        width: 150px;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 25px;
+        margin: 10px;
+    }
+
+    .header-primary .button-pink {
+        background-color: #F42257;
+    }
+
+    .header-primary .button-purple {
+        background-color: #332E62;
+    }
+
+main {
+}
+
+.articles-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 0;
+}
+
+    .articles-container .article {
+        width: 30%;
+    }
+
+        .articles-container .article i {
+            color: #C17F3F;
+            border: 2px solid #C17F3F;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            font-size: 2.5em;
+            vertical-align: middle;
+            padding: 10px;
+        }
+
+        .articles-container .article .article-title {
+            font-weight: 900;
+            font-style: italic;
+            text-shadow: 1px 1px 3px lightgrey;
+        }
+
+        .articles-container .article .article-description {
+            font-size: 0.8em;
+        }
+
+.images-container {
+    display: flex;
+    justify-content: flex-start;
+    /*padding: 40px 0;*/
+    background: url(img/moon.jpg) no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+    .images-container .article {
+        width: 40%;
+        background-color: #27313C;
+        opacity: 0.9;
+        border: 2px solid #FFA951;
+        text-align: center;
+        vertical-align: top;
+        padding: 20px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+        .images-container .article .article-title {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .images-container .article .article-subtitle {
+            font-style: italic;
+            font-size: 0.8em;
+            margin: 40px auto;
+        }
+
+        .images-container .article .article-description {
+            font-weight: normal;
+            font-size: 0.8em;
+        }
+
+    .images-container .article-links {
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+        .images-container .article-links .button {
+            width: 160px;
+            background: linear-gradient(to right, rgba(255, 168, 81, 1), rgba(255, 224, 88, 1));
+            color: #2E3841;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            outline: none;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 10px rgba(46, 56, 65, 1);
+            padding: 65px 25px;
+            /*margin: 10px;*/
+        }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    background-color: #04040E;
+    font-size: 0.8em;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+    footer strong {
+        color: #FFA951;
+        text-transform: uppercase;
+    }
+
+    footer .footer-copyright {
+        padding-left: 40px;
+    }
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+}
+
+    .footer-links a {
+        text-decoration: none;
+        margin-left: 5px;
+    }
+
+    .footer-links li a i {
+        font-size: 1.5em;
+        padding: 15px;
+        border-radius: 50%;
+    }
+
+    .footer-links .blue a i {
+        color: #0000FF;
+        border: 1px solid #0000FF;
+        padding: 15px 20px;
+    }
+
+    .footer-links .green a i {
+        color: #00BFFF;
+        border: 1px solid #00BFFF;
+    }
+
+    .footer-links .purple a i {
+        color: #8A3AB9;
+        border: 1px solid #8A3AB9;
+    }

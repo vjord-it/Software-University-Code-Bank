@@ -1,0 +1,5 @@
+hi=HAI=zdrastiii
+cat=kotka=ket
+aaaa=a=1234
+dog=kuche=dog
+bye=chao=bai

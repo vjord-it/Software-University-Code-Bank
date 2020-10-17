@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Edit User Form</title>
+    <link rel="stylesheet" type="text/css" href="edit-user-form.css" />
+</head>
+<body>
+
+    <header>
+        <h1 class="title">edit user</h1>
+    </header>
+
+    <main>
+        <form method="post">
+            <label>
+                <span>Username</span>
+                <input type="text" name="username" />
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" />
+            </label>
+            <label>
+                <span>Phone number</span>
+                <input type="text" name="phone" />
+            </label>
+            <label>
+                <span>User type</span>
+                <input type="radio" name="type" value="Broadband" /> Broadband
+                <input type="radio" name="type" value="Radio" /> Radio
+            </label>
+            <label>
+                <span>Change Password</span>
+                <input type="password" name="pass" />
+            </label>
+            <label>
+                <span>Group</span>
+                <select name="group" multiple>
+                    <option value="0">All groups</option>
+                    <option value="1">Group 1</option>
+                    <option value="2">Group 2</option>
+                    <option value="3">Group 3</option>
+                    <option value="4">Group 4</option>
+                </select>
+
+            </label>
+            <label>
+                <span>Contacts</span>
+                <a href="#">See Contacts list</a>
+            </label>
+            <button type="reset" class="cancel-btn">CANCEL</button>
+            <button type="submit" class="save-btn">SAVE</button>
+        </form>
+    </main>
+</body>
+</html>

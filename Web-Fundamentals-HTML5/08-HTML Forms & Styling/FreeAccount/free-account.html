@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Free Account</title>
+    <link rel="stylesheet" type="text/css" href="free-account.css" />
+</head>
+<body>
+    <header>
+        <h1>Login or Create a Free Account!</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        </p>
+    </header>
+
+    <main>
+        <form id="create-account-form">
+            <h2>New Account:</h2>
+            <div class="valid">
+                <input type="text" name="username" placeholder="Username" />
+            </div>
+            <div class="valid">
+                <input type="email" name="email" placeholder="E-Mail" />
+            </div>
+            <div class="invalid">
+                <input type="password" name="password" placeholder="Password" />
+            </div>
+            <div class="invalid">
+                <input type="password" name="repeat-password" placeholder=" Repeat Password" />
+            </div>
+            <div class="container">
+                <input type="checkbox" name="inform-me" />
+                Please inform me of upcoming freebies, promotions and news
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+
+        <form id="login-form">
+            <h2>Login:</h2>
+            <div class="valid">
+                <input type="text" name="username" placeholder="Username" />
+            </div>
+            <div class="invalid">
+                <input type="password" name="password" placeholder="Password" />
+            </div>
+            <a href="#" class="container">I Forgot my Password!</a>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+</body>
+</html>

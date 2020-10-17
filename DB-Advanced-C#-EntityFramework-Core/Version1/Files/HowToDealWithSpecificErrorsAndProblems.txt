@@ -1,0 +1,106 @@
+On Error message, when trying to scaffold from database:
+"A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)"
+
+***********************************************
+
+Open "SQL Server Configuration Manager"
+
+Now Click on "SQL Server Network Configuration" and Click on "Protocols for Name"
+
+Right Click on "TCP/IP" (make sure it is Enabled) Click on Properties
+
+Now Select "IP Addresses" Tab -and- Go to the last entry "IP All"
+
+Enter "TCP Port" 1433.
+
+Now Restart "SQL Server .Name." using "services.msc" (winKey + r)
+
+------------------------------------------------------------------------------------------
+
+To enable migrations to create the initial database I've found the following works well.
+
+************************************************
+
+Delete your database from within SQL Server Object Explorer
+Delete all your existing migrations from within the Migrations folder.
+In Package-Management-Console type "Add-Migration InitialCreate"
+
+[optional, depending on your database initializer]
+In Package-Management-Console type "update-database"
+
+------------------------------------------------------------------------------------------
+
+Microsoft.EntityFrameworkCore.Tools  - should be added to the StartUp when creating a code first database
+
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Design              - those should be added to the database library when creating code first
+
+those nuget packages may have to be removed in order for the tests in Judge to pass
+
+------------------------------------------------------------------------------------------
+
+14-Nov-2017 , от Владимир Дамяновски:
+Колеги, честит ви EF Core 2.0.1! Ако ще събмитвате в judge, ползвайте 2.0.0, иначе че ви изгърми с compile time error в който се споменава връзка към NuGet.
+Install-Package Microsoft.EntityFrameworkCore -v 2.0.0
+Същото важи и за 
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -v 2.0.0
+
+------------------------------------------------------------------------------------------
+
+
+How to add Constraints within the table?
+**********************************************
+through migrations add this to migration file (example):
+"    migrationBuilder.Sql("ALTER TABLE PaymentMethods " +
+                "ADD CONSTRAINT CK_CreditCard_BankAccount " +
+                "CHECK(" + 
+                "(CreditCardId IS NULL AND BankAccountId IS NOT NULL) OR " +
+                "(CreditCardId IS NOT NULL AND BankAccountId IS NULL))");"
+
+
+-------------------------------------------------------------------------------------------
+Composite Primary Key:
+**********************************************
+
+build.HasKey(t => new {t.ActiveQuestionId, t.QuestionId}); 
+
+-------------------------------------------------------------------------------------------
+
+Unique constraint
+**********************************************
+
+modelBuilder 
+    .Entity<User>() 
+    .Property(t => t.FirstName) 
+    .IsRequired()
+    .HasMaxLength(60)
+    .HasColumnAnnotation(
+        IndexAnnotation.AnnotationName, 
+        new IndexAnnotation(
+            new IndexAttribute("IX_FirstNameLastName", 1) { IsUnique = true }));
+
+modelBuilder 
+    .Entity<User>() 
+    .Property(t => t.LastName) 
+    .IsRequired()
+    .HasMaxLength(60)
+    .HasColumnAnnotation(
+        IndexAnnotation.AnnotationName, 
+        new IndexAnnotation(
+            new IndexAttribute("IX_FirstNameLastName", 2) { IsUnique = true }));
+
+или:
+[Index("IX_FirstNameLastName", 1, IsUnique = true)]
+public string FirstName { get; set; }
+
+[Index("IX_FirstNameLastName", 2, IsUnique = true)]
+public string LastName { get; set; }
+
+-------------------------------------------------------------------------------------------
+Replace \r\n with newlines in Notepad++ (useful for xml)
+**********************************************
+
+Press CTRL-h and the Replace dialog will open. Type \\r\\n in "Find what" and \r\n in "Replace with".
+Finally, select search mode Extended (\r, \n, \t, \x..., \0) and click "Replace All".
+
+-------------------------------------------------------------------------------------------

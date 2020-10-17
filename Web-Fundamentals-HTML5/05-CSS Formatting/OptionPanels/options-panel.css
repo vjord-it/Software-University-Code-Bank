@@ -1,0 +1,114 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    background: #cacaca;
+    color: #191923;
+}
+
+nav {
+    background: #ffffff;
+    height: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    nav li {
+        display: inline-block;
+        list-style-type: none;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+        nav li:first-of-type > a {
+            text-transform: capitalize;
+            color: #BF1363;
+        }
+
+    nav a {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        color: #191923;
+        line-height: 40px;
+        padding: 20px;
+    }
+
+        nav a:hover {
+            color: #BF1363;
+        }
+
+main {
+    width: 1000px;
+    margin: auto;
+    position: absolute;
+}
+
+    main section {
+        width: 25%;
+        display: inline-block;
+        float: left;
+        padding: 0 5px;
+    }
+
+        main section::after {
+            content: "";
+            clear: both;
+            display: block;
+            height: 0;
+        }
+
+        main section:first-of-type {
+            padding-left: 0px;
+        }
+
+        main section:last-of-type {
+            padding-right: 0px;
+        }
+
+        main section a {
+            text-decoration: none;
+            color: #191923;
+        }
+
+            main section a:hover {
+                color: #9d9c9f;
+            }
+
+                main section a:hover img {
+                    opacity: 0.5; /**/
+                }
+
+        main section img {
+            height: 180px; /**/
+            width: 100%; /**/
+            display: block;
+        }
+
+        main section article {
+            background-color: #ffffff;
+            height: 150px; /**/
+            width: 100%;
+            margin-top: -10px;
+        }
+
+        main section h1 {
+            text-transform: uppercase;
+            padding: 10px;
+        }
+
+        main section p {
+            padding: 0 10px;
+        }

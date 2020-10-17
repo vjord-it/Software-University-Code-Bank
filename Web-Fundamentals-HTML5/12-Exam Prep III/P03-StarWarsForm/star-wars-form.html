@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>StarWars Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="star-wars-form.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="moto">may the force be with you</p>
+            <h2 class="title">Thanks for pre-ordering!</h2>
+        </header>
+
+        <form id="order-form" method="get">
+            <section class="row-container border-bottom">
+                <label class="custom-radio">
+                    <i class="fa fa-circle-o" aria-hidden="true"></i>
+                    <input type="radio" id="payment-method" name="payment-method" value="PayPal" />
+                    <span>Pay Pal</span>
+                    <img src="images/PayPal.png" alt="paypal" />
+                </label>
+                <label class="custom-radio">
+                    <i class="fa fa-circle-o" aria-hidden="true"></i>
+                    <input type="radio" id="payment-method" name="payment-method" value="Card" />
+                    <span>Debit/Credit Card</span>
+                    <img src="images/MasterCard.png" alt="mastercard" />
+                </label>
+            </section>
+
+            <section class="row-container border-bottom">
+                <label for="card" class="card">
+                    <span>Card Number</span>
+                    <input type="text" id="card" name="card" placeholder="4111 1111 1111 1111" />
+                </label>
+            </section>
+
+            <section class="row-container">
+                <label for="exp-date">
+                    <span>Expiry</span>
+                    <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" />
+                </label>
+                <label for="csv">
+                    <span>CSV</span>
+                    <input type="text" id="csv" name="csv" placeholder="123" />
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </label>
+            </section>
+
+            <section class="row-container button-container">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="submit" class="button" value="Finish and Pay" />
+            </section>
+        </form>
+
+        <p class="total-amount">That's <strong>$19.99</strong></p>
+    </main>
+</body>
+</html>

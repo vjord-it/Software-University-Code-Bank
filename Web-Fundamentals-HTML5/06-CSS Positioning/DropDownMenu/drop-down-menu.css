@@ -1,0 +1,83 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    /*background: #1d211e;*/
+    background-color: rgb(29, 33, 30);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #e67c1f;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        list-style: none;
+        background-color: #e67c1f;
+        /*padding: 15px;*/
+        /* use padding & line-height for a instead*/
+    }
+
+        nav li:hover {
+            /*background-color: #000000;*/
+            cursor: pointer;
+        }
+
+        nav li > a:hover {
+            background-color: #000000;
+        }
+
+        nav li > a::after {
+            content: ' +';
+        }
+
+        nav li > a:only-child::after {
+            content: '';
+        }
+
+    nav a {
+        text-decoration: none;
+        color: #ffffff;
+        line-height: 60px; /*NB*/
+        display: block; /*NB*/
+        padding: 0 15px; /*NB*/
+    }
+
+        nav a:hover {
+            background-color: #000000;
+        }
+
+    nav li > .dropdown {
+        display: none;
+        position: absolute;
+    }
+
+    nav li:hover > .dropdown {
+        display: inline-block;
+    }
+
+    nav li > .dropdown > li {
+        display: block;
+        position: relative;
+    }
+
+    nav li#web-design > .dropdown > li {
+        top: 0px;
+        left: 20px;
+    }
+
+    nav li#tutorials > .dropdown > li {
+        top: -60px;
+        left: 69px;
+    }

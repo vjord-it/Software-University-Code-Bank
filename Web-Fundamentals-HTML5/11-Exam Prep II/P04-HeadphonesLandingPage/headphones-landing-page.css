@@ -1,0 +1,234 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    background: url(img/background-image.png) no-repeat center;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+}
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 20px 30px;
+    }
+
+    header .logo-container {
+        color: #000000;
+        font-weight: bold;
+    }
+
+        header .logo-container span {
+            padding-left: 20px;
+        }
+
+    header .nav-primary {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        header .nav-primary li {
+            list-style-type: none;
+        }
+
+            header .nav-primary li a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #898989;
+                font-weight: bold;
+                display: block;
+                cursor: pointer;
+                padding: 1em;
+            }
+
+            header .nav-primary li:hover a {
+                color: #000000;
+                text-decoration: underline;
+            }
+
+    header h1 {
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(198, 198, 198, 1);
+        padding: 100px 0;
+    }
+
+    header p {
+        width: 50%;
+        color: #3D3B30;
+        margin: auto;
+    }
+
+    header .button {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #FFCD02;
+        border: none;
+        border-radius: 25px;
+        padding: 15px 25px;
+        margin: 50px auto;
+    }
+
+        header .button:hover {
+            background-color: #18CDFA;
+        }
+
+main {
+    background-color: #F6F7FB;
+    text-align: center;
+    margin: auto;
+}
+
+.life-style {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .life-style article {
+        width: 50%;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        padding: 150px 0; /**/
+        margin: auto;
+    }
+
+    .life-style .life-style-upper-left {
+        background: url(img/headphone-yellow.png) no-repeat center;
+        background-size: cover;
+        background-color: #18CDFA;
+    }
+
+    .life-style .life-style-upper-right {
+        background: url(img/headphone-black.png) no-repeat center;
+        background-size: cover;
+    }
+
+    .life-style .life-style-lower-left {
+        background: url(img/showcase1.png) no-repeat center;
+        background-size: cover;
+    }
+
+    .life-style .life-style-lower-right {
+        background: url(img/showcase2.png) no-repeat center;
+        background-size: cover;
+        background-color: #FC3698;
+    }
+
+    .life-style h2 {
+        padding-bottom: 20px;
+    }
+
+    .life-style a {
+        display: block;
+        width: 100%;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        /*padding: 150px 0;*/
+    }
+
+.categories {
+    padding: 50px 0;
+}
+
+    .categories h2 {
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+
+    .categories .categories-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .categories .product-category {
+        width: 30%;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+        .categories .product-category img {
+            width: 80%;
+        }
+
+        .categories .product-category .category {
+            text-transform: uppercase;
+            font-size: 0.7em;
+            font-weight: bold;
+            color: #18CDFA;
+        }
+
+        .categories .product-category .quantity {
+            text-transform: capitalize;
+            color: #8B9198;
+            font-size: 1.1em;
+            padding: 20px 0;
+        }
+
+.blog {
+    padding: 50px 0;
+}
+
+    .blog h2 {
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+
+    .blog .posts-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog .post {
+        width: 33%;
+        padding: 20px;
+        text-align: left;
+    }
+
+        .blog .post img {
+            width: 90%;
+            box-shadow: 5px 5px 0px 0px rgba(230,230,230,1);
+            margin-bottom: 15px;
+        }
+
+        .blog .post .post-title {
+            color: #000000;
+            font-size: 0.9em;
+            margin: 20px 0;
+        }
+
+        .blog .post .post-date,
+        .blog .post .post-content {
+            font-size: 0.8em;
+            color: #B4B4BD;
+        }
+
+        .blog .post .post-link {
+            display: block;
+            color: #18CDFA;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 30px 0;
+        }

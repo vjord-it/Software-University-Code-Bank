@@ -1,0 +1,22 @@
+Compiled languages:
+
+  The source code text written by programmers is translated and an
+  executable file is made.  The executable file in turn is used for
+  running (executing) the program.
+
+Interpreted languages:
+
+  The source code text used directly for running the program.  This is
+  achieved by an installed program (interpreter) which executes the
+  instructions.
+
+Compiled vs Interpreter:
+
+  Compiled programs are typically faster and require less memory,
+  while interpreted programs are more convenient to write and run.
+  Interpreted programs also require an interpreter to be installed
+  before running the program.
+
+Is C compiled or interpreted:
+
+  C is compiled.

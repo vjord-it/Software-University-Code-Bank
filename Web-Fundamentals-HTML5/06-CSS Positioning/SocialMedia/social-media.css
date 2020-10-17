@@ -1,0 +1,79 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    /*background: #2e2e2e;*/
+    background: rgb(41, 41, 41);
+}
+
+footer {
+    text-align: left;
+    margin: auto;
+    text-align: left;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 15px;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    /*color: #b6b69b;*/
+    color: rgb(181, 180, 152);
+}
+
+footer > section > div div {
+    display: inline-block;
+    background: url(images/social.jpg);
+    width: 66px;
+    height: 58px;
+    cursor: pointer;
+}
+
+.facebook {
+    background-position: 834px 125px;
+}
+
+    .facebook:hover {
+        background-position: 834px 62px;
+    }
+
+.linkedin {
+    background-position: 642px 125px;
+}
+
+    .linkedin:hover {
+        background-position: 642px 62px;
+    }
+
+.youtube {
+    background-position: 323px 125px;
+}
+
+    .youtube:hover {
+        background-position: 323px 62px;
+    }
+
+.twitter {
+    background-position: 769px 125px;
+}
+
+    .twitter:hover {
+        background-position: 769px 62px;
+    }

@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Room Reservation</title>
+    <link rel="stylesheet" type="text/css" href="room-reservation.css" />
+</head>
+<body>
+    <header id="header">
+        <h1 class="title">Room Reservation</h1>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <article id="basic-info">
+                <h2 class="subtitle">Basic Information</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nibh varius odio sollicitudin
+                    blandit nec eu elit. Suspendisse ac risus nunc, quis elementum lorem. Pellentesque vehicula egestas eros
+                    nec commodo.
+                </p>
+            </article>
+
+            <form id="search-form">
+                <label>
+                    <span>Search</span>
+                    <input type="text" name="search-term" />
+                </label>
+                <!-- not possible to use :before or :after pseudo content on <input> elements, however if you instead use <button>Label</button> -->
+                <button type="submit"></button>
+            </form>
+        </section>
+
+        <section id="reservation-section">
+            <form id="reservation-form">
+                <div class="personal-details">
+                    <h2 class="subtitle">Personal Details</h2>
+                    <input type="text" name="first-name" placeholder="First Name" required />
+                    <input type="text" name="last-name" placeholder="Last Name" required />
+                    <input type="email" name="email" placeholder="Enter email" required />
+                </div>
+
+                <div class="reservation-details">
+                    <h2 class="subtitle">Request a Reservation</h2>
+                    <div class="container">
+                        <label>
+                            <span>Select a Room</span>
+                            <select name="room" required>
+                                <option value="1">Room 1</option>
+                                <option value="2">Room 2</option>
+                                <option value="3">Room 3</option>
+                                <option value="4">Room 4</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Number of Rooms</span>
+                            <input type="number" min="1" name="number-of-rooms" required />
+                        </label>
+                    </div>
+                    <div class="container">
+                        <label>
+                            <span>Check-In</span>
+                            <input type="date" name="checkin" required />
+                        </label>
+                        <label>
+                            <span>Check-Out</span>
+                            <input type="date" name="checkout" required />
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">Book Now</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

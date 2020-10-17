@@ -1,0 +1,71 @@
+@media screen and (min-width: 741px) {
+    #wrapper {
+        margin: 0 auto;
+    }
+
+    #info {
+        width: 60%;
+    }
+
+    #photo {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    header,
+    h2 {
+        text-align: center;
+    }
+
+    #info,
+    #photo {
+        float: none;
+    }
+
+    p {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #skills-left,
+    #skills-right {
+        float: none;
+        width: 100%;
+    }
+
+    #skills ul li {
+        display: inline-block;
+        width: 40%;
+        padding-left: 15px;
+        background: url(images/bullet.png) -3px 5px no-repeat;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #wrapper {
+        min-width: unset;
+        padding: 0;
+        margin: 0 5%;
+    }
+
+    #photo img {
+        max-width: 90%;
+    }
+
+    #skills {
+    }
+
+    ul li {
+        line-height: 1.5;
+    }
+
+    h1, h2, h3, p, ul li {
+        word-wrap: break-word;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}

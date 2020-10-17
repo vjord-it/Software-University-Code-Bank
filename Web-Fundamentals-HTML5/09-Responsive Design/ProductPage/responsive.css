@@ -1,0 +1,72 @@
+@media all and (max-width: 640px) {
+
+    .wrap {
+        width: 100%;
+    }
+
+    #header-top-area,
+    #header-middle-area {
+        display: block;
+        border-bottom: 1px solid #b5b9ba;
+    }
+
+        #header-top-area h2 {
+            display: none;
+        }
+
+        #header-top-area > a {
+            float: none;
+        }
+
+    #header-middle-area {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #header-bottom-area {
+        display: none;
+    }
+
+    #product-menu {
+        display: block;
+        float: none;
+    }
+
+    /* TODO menu hover */
+
+    .box {
+        width: 100%;
+    }
+
+        .box:nth-of-type(2) {
+            /*order: 1;*/
+        }
+
+    footer .wrap {
+        background-color: #26292d;
+    }
+
+    footer .box {
+        float: none;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    footer .share {
+        /*padding-top: 1.6rem;*/
+    }
+
+        footer .share > * {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        footer .share > a {
+            color: #ffffff;
+        }
+
+    footer .email-newsletter > span {
+        display: block;
+    }
+}

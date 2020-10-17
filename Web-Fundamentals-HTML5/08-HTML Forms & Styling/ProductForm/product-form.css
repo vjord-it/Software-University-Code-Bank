@@ -1,0 +1,106 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+}
+
+main {
+    margin: 50px;
+}
+
+.product-container {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 10px 10px 40px 0px rgba(232,246,246,0.8);
+}
+
+.image-container,
+#product-form {
+    display: inline-block;
+    vertical-align: middle;
+    height: 380px;
+}
+
+.image-container {
+    float: left;
+    width: 40%;
+    background: linear-gradient(to bottom, #6afdc9 0%,#42c9ca 100%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    vertical-align: middle;
+}
+
+    .image-container img {
+        display: block;
+        width: 100%;
+    }
+
+#product-form {
+    width: 55%;
+    background: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+    #product-form h1,
+    #product-form h2 {
+        font-family: Anton;
+        margin: 20px 0;
+    }
+
+    #product-form label,
+    #product-form label span,
+    #product-form .button {
+        display: block;
+        line-height: 1.5em;
+        margin: 10px 0;
+    }
+
+    #product-form select,
+    #product-form input {
+        margin-left: 20px;
+        width: 200px;
+        padding: 2px;
+    }
+
+    #product-form input {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #48CCCD;
+    }
+
+        #product-form input::placeholder {
+            color: #48CCCD;
+        }
+
+    #product-form select {
+        background-color: #48CCCD;
+        color: #ffffff;
+    }
+
+    #product-form .button {
+        text-transform: uppercase;
+        color: #48CCCD;
+        background: none;
+        border: 2px solid #48CCCD;
+        border-radius: 15px;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+        #product-form .button:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #48CCCD;
+            cursor: pointer;
+        }

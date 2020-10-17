@@ -1,0 +1,1 @@
+Sum of values of all digits in "res/numbers.txt": 117

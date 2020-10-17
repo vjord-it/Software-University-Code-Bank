@@ -1,0 +1,227 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    color: #676969;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background: #F5FAFC;
+    padding: 40px;
+}
+
+    .nav-container .logo {
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+    }
+
+    .nav-container .nav-primary {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .nav-container .nav-primary li {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+            .nav-container .nav-primary li a {
+                text-decoration: none;
+                color: #676969;
+                display: block;
+            }
+
+            .nav-container .nav-primary li:first-of-type a {
+                color: #244356;
+                font-weight: bold;
+            }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: bottom;
+    background: #F5FAFC;
+    padding: 40px 0;
+}
+
+.header-right {
+    width: 40%;
+}
+
+    .header-right img {
+        width: 100%;
+    }
+
+.header-left {
+    width: 40%;
+    padding: 0 40px;
+    margin-right: 40px;
+}
+
+    .header-left .header-title {
+        color: #4C8ADD;
+        font-weight: bold;
+        font-size: 2.3em;
+        margin-bottom: 20px;
+    }
+
+    .header-left .header-episode {
+        color: #A5BAC0;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        margin: 40px 0;
+    }
+
+        .header-left .header-episode:before,
+        .header-left .header-episode:after {
+            content: "~~~";
+            font-family: FontAwesome;
+        }
+
+    .header-left .header-details {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.7em;
+        color: #A5BAC0;
+        margin-bottom: 20px;
+    }
+
+        .header-left .header-details .duration {
+        }
+
+            .header-left .header-details .duration:before {
+                content: "\f017";
+                font-family: FontAwesome;
+                padding-right: 10px;
+            }
+
+        .header-left .header-details .genres {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 10px;
+        }
+
+            .header-left .header-details .genres li {
+                text-transform: uppercase;
+                list-style-type: none;
+                padding-left: 10px;
+            }
+
+    .header-left .description {
+        width: 80%;
+        font-size: 0.9em;
+        text-align: left;
+        margin-bottom: 80px;
+    }
+
+main {
+}
+
+    main .main-title {
+        text-transform: uppercase;
+        text-align: center;
+        color: #809BA4;
+        font-weight: normal;
+        letter-spacing: 0.5em;
+        margin: 40px;
+    }
+
+.main-characters-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    .main-characters-container .character {
+        width: 50%;
+        display: flex;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+        .main-characters-container .character .image-container span {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+            text-align: center;
+        }
+
+    .main-characters-container .rey {
+        text-align: right;
+    }
+
+        .main-characters-container .rey .character-description {
+            padding-right: 20px;
+        }
+
+    .main-characters-container .finn .character-description {
+        padding-left: 20px;
+    }
+
+    .main-characters-container .making .character-description {
+        padding-left: 80px;
+    }
+
+.main-characters .button {
+    display: block;
+    width: 250px;
+    text-decoration: none;
+    color: #4C8ADD;
+    text-align: center;
+    border: 3px solid #4C8ADD;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 auto 50px;
+}
+
+.episodes-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .episodes-container .episode {
+        width: 25%;
+        background-color: #E1EEF6;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        font-weight: normal;
+        letter-spacing: 0.5em;
+        height: 350px;
+        padding: 40px;
+        margin: auto;
+    }
+
+        .episodes-container .episode a {
+            display: block;
+            text-decoration: none;
+            color: #809BA4;
+        }
+
+        .episodes-container .episode .episode-title {
+            margin: 40px 0;
+        }
+
+        .episodes-container .episode:nth-of-type(2n+2) {
+            background-color: #C4DEED;
+        }
+
+        .episodes-container .episode img {
+            width: 50%;
+            margin: 20px auto;
+        }
+
+footer {
+    background-color: #1F1F1F;
+    color: #AEAEAE;
+    text-align: center;
+    padding: 20px;
+}

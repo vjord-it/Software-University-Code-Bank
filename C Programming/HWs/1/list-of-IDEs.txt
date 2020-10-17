@@ -1,0 +1,35 @@
+# FLOSS = Free, Libre and Open-Source Software
+
+Code::Blocks:
+
+  - For programming C and C++ programs.
+  - Runs on many systems, including GNU/Linux and Windows.
+  - It's free as in freedom software
+
+Eclipse:
+
+  - Primarily made for programming in Java, but can be used with other
+    languages too, including C and C++.
+  - Runs on many systems, including GNU/Linux and Windows.
+  - It's free as in freedom software
+
+NetBeans:
+
+  - Primarily made for programming in Java, but can be used with other
+    languages too, including C and C++.
+  - Runs on many systems, including GNU/Linux and Windows.
+  - It's free as in freedom software
+
+Geany:
+
+  - Used for writing software in various languages, including C, C++,
+    C#, Java, JavaScript and many more.
+  - Very lightweight and simplified compared to most other IDEs.
+  - Runs on many systems, including GNU/Linux and Windows.
+  - It's free as in freedom software.
+
+Microsoft Visual Studio:
+
+  - Mainly used for writing C, C++ and C# software.
+  - Runs only on Windows.
+  - It's proprietary software and has gratis and payed versions.

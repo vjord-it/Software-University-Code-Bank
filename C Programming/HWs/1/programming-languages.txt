@@ -1,0 +1,64 @@
+A list of other widely used programming languages and their
+similarities and differences compared to C.
+
+C++
+
+  Similarities:
+
+  - Very similar and almost completely backwards compatible to C.
+
+  Differences:
+
+  - Object-oriented programming functionality.
+  - More functionality in general.
+
+Java
+
+  Similarities:
+
+  - Similar syntax.
+  - Statically typed, which means you must specify data types
+    like int, float and others.
+
+  Differences:
+
+  - Java programs are compiled to a special bytecode format, which is
+    run by a Java interpreter, so unlike C, a compiled Java program
+    may run on different systems and processors
+  - A runtime environment must be installed for running Java programs.
+  - Automatic memory management (garbage collection).
+  - Object-oriented programming functionality.
+
+JavaScript
+
+  Similarities:
+
+  - Somewhat similar syntax
+
+  Differences:
+
+  - It's fame mostly comes of it's used in web browsers for making
+    more functional web pages.
+  - Data types don't need to be specified (dynamic typing).
+  - Automatic memory management (garbage collection).
+  - Object-oriented programming functionality.
+
+Python
+
+  Differences:
+
+  - Aimed to be easy to read and write.
+  - Python programs don't need to be compiled and are run by a Python
+    interpreter.
+  - Automatic memory management (garbage collection).
+  - Data types don't need to be specified (dynamic typing).
+  - Object-oriented programming functionality.
+
+PHP
+
+  Differences:
+
+  - It's aimed at and it's widely used for making web sites which are
+    installed on servers.
+  - Automatic memory management (garbage collection).
+  - Data types don't need to be specified (dynamic typing).

@@ -1,0 +1,100 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #927057;
+    font-family: Oxygen, sans-serif;
+    color: #ffffff;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+    .image-container > img {
+        border: 5px solid #D5C395;
+        height: 123px; /**/
+    }
+
+form {
+    position: relative; /**/
+    width: 500px; /**/
+    background-color: #D5C395;
+    padding: 50px;
+    margin: 50px auto 0;
+}
+
+    form::before {
+        position: absolute; /**/
+        width: 100%;
+        top: -29px;
+        left: 216px;
+        background: url(images/triangle.png);
+        background-repeat: no-repeat;
+        content: ''; /**/
+        height: 30px;
+        text-align: center;
+        margin: auto;
+    }
+
+.form-field {
+    position: relative; /**/
+}
+
+/*.form-field i {
+        position: absolute; 
+        top: 12px;
+        left: 17px;
+        font-size: 1.1em;
+        color: #927057;
+    }*/
+
+form input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    background: url(images/user.png) no-repeat #efe1c4 15px 10px;
+}
+
+input[type=password] {
+    background: url(images/pass.png) no-repeat #efe1c4 15px 10px;
+}
+
+input[type=text], 
+input[type=password] {
+    /*background-color: #efe1c4;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position-x: 15px;*/
+    /*background-position-y: 10px;*/
+    font-size: 1.1em;
+    padding: 10px 10px 10px 60px;
+    margin-bottom: 30px;
+}
+
+input[type=submit] {
+    background-color: #927057;
+    color: #efe1c4;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        color: #fae7b0;
+        box-shadow: 0 0 3px #fff;
+    }
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    color: #EFE1C4; /**/
+}

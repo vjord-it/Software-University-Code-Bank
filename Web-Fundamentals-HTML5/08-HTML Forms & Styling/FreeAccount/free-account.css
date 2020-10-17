@@ -1,0 +1,122 @@
+﻿@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #D8D8D8;
+    padding-bottom: 40px;
+    margin: 40px auto;
+}
+
+    header h1 {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+main {
+    width: 100%;
+}
+
+form {
+    display: inline-block;
+    width: 49%;
+    margin: auto;
+    padding: 0 40px;
+    text-align: center;
+    vertical-align: top;
+}
+
+    form h2 {
+        margin-bottom: 20px;
+    }
+
+    form .valid input,
+    form .invalid input,
+    form a {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+        line-height: 2em;
+        padding: 2px;
+    }
+
+    form input[type=checkbox] {
+        font-size: 2em;
+        width: 20px;
+        height: 20px;
+        vertical-align: bottom;
+    }
+
+    form .container {
+        text-align: left;
+    }
+
+    form button {
+        border: none;
+        border-radius: 5px;
+        margin: 20px 0;
+        padding: 10px;
+        width: 50%;
+        font-weight: bold;
+        background-color: #F1F1F1;
+        box-shadow: 1px 1px 10px #333333
+    }
+
+        form button:hover {
+            background-color: #B3E16D;
+            cursor: pointer;
+        }
+
+    form a {
+        text-decoration: none;
+        color: #F5BBC1;
+    }
+
+        form a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+    form .valid,
+    form .invalid {
+        position: relative;
+    }
+
+        form .valid::after,
+        form .invalid::after {
+            font-family: FontAwesome, serif;
+            font-size: 14px;
+            font-weight: bold;
+            position: absolute;
+            top: 2px;
+            left: 280px;
+            color: #ffffff;
+            padding: 5px;
+            line-height: 1.5em;
+            width: 20px;
+            height: 20px;
+        }
+
+        form .valid::after {
+            content: "\f00c";
+            background-color: #00FF00;
+        }
+
+        form .invalid::after {
+            content: "\f00d";
+            background-color: #FF0600;
+        }

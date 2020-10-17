@@ -1,0 +1,79 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: linear-gradient(to bottom right, #010101 0%, #B4B8B7 100%) no-repeat center;
+}
+
+main {
+    display: flex;
+    /*width: 60%;*/
+    width: 700px; /**/
+    background-color: #E7E7E7;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 100px auto;
+}
+
+    main .right-section {
+        width: 70%;
+        padding-left: 20px;
+    }
+
+    main .left-section {
+        width: 30%;
+        margin: auto; /**/
+    }
+
+        main .left-section img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+#order-form .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#order-form .item {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #000000;
+    margin-right: 20px;
+    padding: 15px 0;
+}
+
+#order-form input {
+    border: none;
+    background-color: #E7E7E7;
+}
+
+    #order-form input:focus {
+        border: none;
+        outline: none;
+    }
+
+    #order-form input::placeholder {
+        text-transform: uppercase;
+    }
+
+#order-form i {
+    /*position: relative;*/
+    /*left: -10px;*/
+}
+
+#order-form .right {
+    text-align: right;
+}
+
+#order-form button {
+    color: #E7E7E7;
+    background-color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin: 15px;
+}

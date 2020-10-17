@@ -1,0 +1,188 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background: linear-gradient(to bottom, #557788 0%, #142127 100%) no-repeat center center;*/
+    background: linear-gradient(to bottom, #557788 0%, #142127 100%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+nav {
+    text-align: right;
+    background-color: #eff4f7;
+    margin: 40px;
+    height: 80px;
+    position: relative;
+    z-index: 5; /* heigher stack order on top */
+}
+
+    nav ul {
+        list-style-type: none;
+        /*float: right; */
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin-top: 5px;
+            margin-right: 20px;
+        }
+
+    nav a {
+        text-decoration: none;
+        color: #a4a8a9;
+        display: block;
+        line-height: 70px;
+    }
+
+        nav a:hover {
+            /* nav height - li margin-top - a line-height */
+            border-bottom: 5px solid #70e9ff;
+            cursor: pointer;
+            color: #333;
+        }
+
+.logo {
+    position: absolute;
+    z-index: 0;
+    background-color: #ea3d51;
+    width: 90px;
+    height: 90px;
+    top: 20px;
+    left: 30%;
+    padding: 20px;
+}
+
+.brand {
+    text-transform: uppercase;
+    text-align: center;
+    color: #eff4f7;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+
+main {
+    background-color: #ccd0d9;
+    width: 80%;
+    margin: 80px auto;
+}
+
+header {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+    header .book-title {
+        position: relative;
+        z-index: 10;
+        color: #121f25;
+        font-size: 3em;
+        margin: 0;
+    }
+
+    header .book-genre {
+        position: relative;
+        z-index: 3;
+        top: -54px;
+        left: 28px;
+        color: #6dffb8;
+        font-size: 5em;
+        margin: 0;
+    }
+
+.review {
+    position: relative;
+    z-index: 8;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(to bottom, #eb3c53 0%, #e6135c 100%);
+    width: 30%; /**/
+    padding: 40px;
+}
+
+    .review > img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 80px;
+        border-radius: 50%;
+    }
+
+    .review > .book-rating {
+        color: #ffffff;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    .review > .book-review {
+        text-align: center;
+        color: #ffffff;
+    }
+
+        .review > .book-review:before,
+        .review > .book-review:after {
+            content: '"';
+            color: #af213d;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+    .review > button {
+        border: 3px solid #76edff;
+        background: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 1em;
+        padding: 10px 25px;
+    }
+
+        .review > button:hover {
+            background-color: #70ecff;
+            border: 3px solid #70ecff;
+            color: #348098;
+        }
+
+.read {
+    position: relative;
+    z-index: 4;
+    top: -250px;
+    background-color: #ffffff;
+    width: 80%;
+    padding: 250px 35px 35px 35px;
+    margin: 50px auto;
+}
+
+    .read > h1 {
+        text-transform: capitalize;
+        color: #46ee97;
+        font-size: 2em;
+    }
+
+    .read > p {
+        width: 70%;
+    }
+
+    .read > button {
+        background: none;
+        border: 3px solid #628291;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 1em;
+        padding: 10px 25px;
+    }
+
+        .read > button:hover {
+            background-color: #628291;
+            cursor: pointer;
+            color: #6dffb8;
+        }

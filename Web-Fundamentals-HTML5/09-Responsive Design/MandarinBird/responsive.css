@@ -1,0 +1,132 @@
+@media all and (max-width: 1200px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+        header nav > ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    main {
+        width: 100%;
+        display: flex;
+    }
+
+        main section,
+        main aside {
+            float: none;
+        }
+
+        main section {
+            width: 60%;
+        }
+
+            main section > div {
+                height: auto;
+            }
+
+        main aside {
+            width: 40%;
+        }
+
+    footer p {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media all and (max-width: 730px) {
+
+    main {
+        flex-wrap: wrap;
+    }
+
+        main section,
+        main aside {
+            width: 100%;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        main aside {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+            main aside article {
+                margin-right: 0;
+            }
+}
+
+@media all and (max-width: 500px) {
+
+    header,
+    main {
+        width: 80%;
+    }
+
+    header {
+        background-size: cover;
+        border-bottom: none;
+    }
+
+        header h1 {
+            font-size: 44px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        header > nav {
+            height: auto;
+        }
+
+        header nav > ul {
+            flex-wrap: wrap;
+        }
+
+            header nav > ul li {
+                width: 100%;
+            }
+
+    main {
+    }
+
+        main section > div {
+            margin: auto;
+            text-align: center;
+        }
+
+            main section > div > div {
+                float: none;
+                display: block;
+                text-align: center;
+                background-color: #b7cc89;
+                margin: 0 auto;
+                height: 170px;
+            }
+
+
+        main > section > div > article > h3 {
+            text-align: center;
+        }
+
+        main > section > div > article > p {
+            text-align: left;
+        }
+
+        main aside {
+            margin-top: 20px;
+        }
+
+        main > aside > article > h1,
+        main > aside > article > h2 {
+            text-align: center;
+        }
+}
